@@ -84,9 +84,9 @@ system scripting.
 
 #* Example No.2
 
-a = 13
-a = 12
-print(a) #* now  second a will overWrite on first because now they're same Result = 12
+# a = 13
+# a = 12
+# print(a) #* now  second a will overWrite on first because now they're same Result = 12
 
 
 #? Variable Names
@@ -100,17 +100,120 @@ print(a) #* now  second a will overWrite on first because now they're same Resul
 #*  A variable name cannot be any of the Python keywords.
 
 #* Example (Legal)
-myvar = "Muhammad Usman"
-my_var = "Muhammad Usman"
-_my_var = "Muhammad Usman"
-myVar = "Muhammad Usman"
-MYVAR = "Muhammad Usman"
-myvar2 = "Muhammad Usman"
+# myvar = "Muhammad Usman"
+# my_var = "Muhammad Usman"
+# _my_var = "Muhammad Usman"
+# myVar = "Muhammad Usman"
+# MYVAR = "Muhammad Usman"
+# myvar2 = "Muhammad Usman"
 
 #* But the most efficient is two way
 
 #* Example with these two ways the error chances would less
 
-my_var = "Muhammad Usman"
-myVar = "Muhammad Usman"
+# my_var = "Muhammad Usman"
+# myVar = "Muhammad Usman"
+
+#? Multi Words Variable Names
+#*  names with more than one word can be difficult to read.
+
+#* There are several techniques you can use to make them more readable:
+
+#? Camel Case: 
+#* in camel case first word first letter would be small case and other words first letter would be capital..
+#* Mostly we are using camel Case when we making descriptive variables name
+
+#* Example:
+
+# userName = input("Enter your Name")
+# userEmail = input("Enter your Email")
+
+#? Pascal Case
+#* Each word starts with a capital letter:
+
+# UserName = "Muhammad Usman"
+# UserEmail = "example@gmail.com"
+
+#? Snake Case
+#* Each word is separated by an underscore character:
+
+# user_id = 2309
+
+# addition_of_two_numbers =  1 + 2
+
+
+#? Many Values to Multiple Variables
+#*  Python allows you to assign values to multiple variables in one line:
+
+#! Make sure that variables and values must be same other wise it'll occur error
+
+#* Example:
+
+# a, b, c = 3, 4, 10
+# userName, user_id = input("Enter Your Name:"), input("Enter Your Id:")
+
+# x, y, z = "Banana", "Kwei-fruit", "Mango"
+# print(x) #* Banana
+# print(y) #* kwei-fruit
+# print(z) #* Mango
+
+
+#? One Value to Multiple Variables
+#*  you can assign the same value to multiple variables in one line:
+
+#* Example:
+
+# x = y = z = "Asalam.o.Alikom jano"
+# print(x)
+# print(y)
+# print(z)
+
+#? Unpack a Collection
+#* If you have a collection of values in a list, tuple (Array) etc. Python allows you to extract (assign) the values into variables. This is called unpacking.
+
+#* Example:
+
+# myFavoriteFruits = ["Banana",  "Kwei-fruit", "Mango"]
+
+# x, y, z = myFavoriteFruits
+
+# print(x) #* Banana
+# print(y) #* kwei-fruit
+# print(z) #* Mango
+
+
+#? Output Variables
+#* The Python print() function is often used to output variables.
+
+# my_Favorite_Personality = "Imran Khan"
+
+# print(my_Favorite_Personality)  #* Imran Khan
+
+#* In the print() function, you output multiple variables, separated by a comma:
+
+# x = 10
+# y = 13
+
+# print(x, y)                  #* x = 10 , y = 13
+# print(x + y)                 #* x + y = 23
+
+#* Example No.2:
+
+x = "i "
+y = "like "
+z = "someone "
+
+print(x, y, z)
+
+#! Note: if i don't give spaces in the end of words then the sentence could be like this (ilikesomeone) 
+#! it's means that python don't ignore the the spaces inside string.
+
+#? You can also use the + operator to output multiple variables:
+
+
+
+
+
+
+
 
