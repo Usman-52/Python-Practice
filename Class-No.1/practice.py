@@ -189,7 +189,7 @@ system scripting.
 
 # print(my_Favorite_Personality)  #* Imran Khan
 
-#* In the print() function, you output multiple variables, separated by a comma:
+#* In the print() function, you can print multiple variables, separated by a comma:
 
 # x = 10
 # y = 13
