@@ -199,17 +199,20 @@ system scripting.
 
 #* Example No.2:
 
-x = "i "
-y = "like "
-z = "someone "
+# x = "i "
+# y = "like "
+# z = "someone "
 
-print(x, y, z)
+# print(x, y, z)
 
 #! Note: if i don't give spaces in the end of words then the sentence could be like this (ilikesomeone) 
 #! it's means that python don't ignore the the spaces inside string.
 
 #? You can also use the + operator to output multiple variables:
 
+a = 'Hello'
+b = 'World'
+print(a + b)
 
 
 
