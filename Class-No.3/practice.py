@@ -70,8 +70,8 @@
 # my_list_of_items = ["Banana", 3, 2+3, "mango", "orange", 4.3]
 # print(my_list_of_items)
 
-fruit_list = ["🍌", "🥭", "🍇", "🍈", "🍉", "🍊", "🍋"]
-print(fruit_list)
+# fruit_list = ["🍌", "🥭", "🍇", "🍈", "🍉", "🍊", "🍋"]
+# print(fruit_list)
 
 #? Accessing Elements: Lists are zero-indexed, so you can access individual elements using their index.
 
@@ -102,7 +102,9 @@ print(fruit_list)
 #* Before: ["🍌", "🥭", "🍇", "🍈", "🍉", "🍊", "🍋"]
 #* After:  ['🍌', '🥭', '🍎', '🍇', '🍈', '🍉', '🍊', '🍋']
 
-#? Removing Elements:
+#?============================ Remove Method ============================#
+
+#* Removing Elements:
 #*Remove: Removes the first occurrence of the item
 
 # fruit_list.remove("🍇") #* it will remove 🍇 from the list , same you can remove elements by directly targeting them
@@ -119,3 +121,37 @@ print(fruit_list)
 #* Before: ['🍌', '🥭', '🍇', '🍈', '🍉', '🍊', '🍋']
 #* After:  ['🍌', '🥭', '🍇', '🍈', '🍉', '🍊']
 
+#?========================== Extend Method =============================#
+
+#* The extend() method in Python is used to add all elements from one iterable (like a list, tuple, or string) to the end of an existing list. 
+#* This method modifies the original list in place by appending each item from the iterable.
+
+# fruit_list.extend(["🍏", "🍎"]) #* it will extend the fruit list and add 🍏 and 🍎 at the end of the list
+# print(fruit_list) 
+
+#? OR
+#? Example 1: Extending a List with Another List
+list1 = [1, 2, 3]
+list2 = [4, 5, 6, 2, 8, 2, 0, 2,]
+
+# list1.extend(list2) #* it'll merge (combine) list2 into list1 
+# print(list1)        #* [1, 2, 3, 4, 5, 6]
+
+#?================ reverse(), count() ,index() ========================#
+
+
+#* sort():
+# list1.sort(reverse=False) #* reverse = False means that the list is in Ascending order, if it's True then its means it's in descending order
+# print(list1)
+
+# list2.reverse() #* The method reverse just reverse the elements in the list not sorting
+# print(list2)
+
+tows_in_list2 =list2.count(2) #* it'll count twos (2) in the list
+print(tows_in_list2)  #* 3
+
+#? Key Points:
+#* sort(): Sorts the list in ascending (or descending) order.
+#* reverse(): Reverses the order of the elements in the list.
+#* count(): Returns how many times a specific element appears in the list.
+#* index(): Returns the position of the first occurrence of a specific element.
