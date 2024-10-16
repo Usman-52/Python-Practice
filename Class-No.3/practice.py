@@ -141,16 +141,31 @@ list2 = [4, 5, 6, 2, 8, 2, 0, 2,]
 
 
 #* sort():
+
 # list1.sort(reverse=False) #* reverse = False means that the list is in Ascending order, if it's True then its means it's in descending order
 # print(list1)
+
+#*======================== reverse(): ==========================*#
 
 # list2.reverse() #* The method reverse just reverse the elements in the list not sorting
 # print(list2)
 
-tows_in_list2 =list2.count(2) #* it'll count twos (2) in the list
-print(tows_in_list2)  #* 3
+#*============================ count(): =========================*#
 
-#? Key Points:
+#* The count() method in Python is used to count how many times a specific element appears in a list. 
+#* However, it requires one argument, which is the element you want to count.
+
+# tows_in_list2 =list2.count(2) #* it'll count twos (2) in the list
+# print(tows_in_list2)  #* 3
+
+
+#*========================== index() =============================*#
+
+# index_of_10 = list2.index(10)
+# print(index_of_10)
+
+#!================================ Key Points: ================================#
+
 #* sort(): Sorts the list in ascending (or descending) order.
 #* reverse(): Reverses the order of the elements in the list.
 #* count(): Returns how many times a specific element appears in the list.
