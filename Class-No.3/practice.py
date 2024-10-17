@@ -145,6 +145,10 @@ list2 = [4, 5, 6, 2, 8, 2, 0, 2,]
 # list1.sort(reverse=False) #* reverse = False means that the list is in Ascending order, if it's True then its means it's in descending order
 # print(list1)
 
+# list10 = [100, 50, 65, 82, 23]
+# list10.sort()
+# print(list10)
+
 #*======================== reverse(): ==========================*#
 
 # list2.reverse() #* The method reverse just reverse the elements in the list not sorting
@@ -170,3 +174,39 @@ list2 = [4, 5, 6, 2, 8, 2, 0, 2,]
 #* reverse(): Reverses the order of the elements in the list.
 #* count(): Returns how many times a specific element appears in the list.
 #* index(): Returns the position of the first occurrence of a specific element.
+
+
+
+#?====================================== Loop List ===============================#
+#? Loop Through a List
+#* Print all items in the list, one by one:
+
+fruit_list2 = ["banana", "mango", "kiwi", "orange", "apple"]
+# for i in fruit_list2:
+#     print(i)
+    
+#* OR
+# i = 0
+# while i < len(fruit_list2):
+#     print(fruit_list2[i])
+#     i = i + 1
+
+#?=================================== Copy list ==================================#
+
+#* there are 3 ways to copy list:
+
+#?================================ copy() method ==============================#
+#* using copy() (method) you can easily copy any list
+
+# fruit_list3 = fruit_list2.copy()
+# print(fruit_list3)
+
+#?============================ list constructor method ============================#
+
+# fruit_list4 = list(fruit_list2)
+# print(fruit_list4)
+
+#?==================================slice method ===================================#
+
+# fruit_list5 = fruit_list2[:]
+# print(fruit_list5)
