@@ -2,11 +2,11 @@ import ast
 read_or_write = input('To write in file Enter "w" and to search from file Enter "r" \n')
 # condition for reading or writing in file
 if read_or_write.lower().strip() == 'w':
-    enteries = int(input('How many Enteries you want to add \n'))
+    entries = int(input('How many Entries you want to add \n'))
     i = 0
 
-# loops number of enteries
-    while i < enteries:
+#* loops number of entries
+    while i < entries:
         roll_no = int(input('Enter your Roll No \n'))
         name: str = input("Enter your name \n") 
         dic = {
