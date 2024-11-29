@@ -13,8 +13,8 @@ if read_or_write.lower().strip() == 'w':
         'AI':int(input("Enter your AI marks \n")),
         'Computer Network':int(input("Enter your Computer Network marks \n")),
         'NoSQL':int(input("Enter your NoSQL marks \n")),
-        'Web Desing and Devlopment':int(input("Enter your Web Desing and Devlopment marks \n")),
-        'Ecnomics':int(input("Enter your Ecnomics marks \n")),
+        'Web Design and Development':int(input("Enter your Web Design and Development marks \n")),
+        'Economics':int(input("Enter your Economics marks \n")),
         'Professional Practice':int(input("Enter your Professional Practice marks \n"))
     }
         
@@ -38,12 +38,11 @@ elif read_or_write.lower().strip() == 'r':
                 pass
             
             counter = counter + 5
-
 # calculating obtained marks and percentage for the require student
     total_marks = 600
     obtained_marks = 0
     
-# The below line used to convert str to dict for futher calculation
+# The below line used to convert str to dict for further calculation
     dic =  ast.literal_eval(l_sentences[index+3])
     for value in dic.values():
         obtained_marks += int(value )
